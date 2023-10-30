@@ -3,7 +3,7 @@
 ### Site URL
 - [URL](https://soumik16.github.io/Registration-Form/)
 
-### After fillup the first page see the Next Page also.
+### After fill-up the first page see the Next Page also.
 
 ### Screenshot of the site
 
