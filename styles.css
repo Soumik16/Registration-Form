@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+form {
+    width: 25rem;
+    height: 30rem;
+    margin: auto;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 20px 25px;
+    box-shadow: 10px 10px 10px rgb(71, 69, 69);
+}
+
+.levelbox {
+    background-color: rgb(226, 230, 235);
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+#email.invalid {
+    color: red;
+}
+
+.password-container {
+    width: 100%;
+    position: relative;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 40%;
+    right: 4%;
+    cursor: pointer;
+    color: rgb(93, 89, 117);
+}
+
+button {
+    background-color: rgb(31, 41, 49);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgb(12, 136, 244);
+    color: white;
+    cursor: pointer;
+}
+
+.headingsContainer {
+    text-align: center;
+}
+
+.headingsContainer p {
+    color: black;
+}
+
+.mainContainer {
+    padding: 16px;
+}
+
+
+.subcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subcontainer a {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+span.forgotpsd a {
+    float: right;
+    padding-top: 16px;
+}
+
+.forgotpsd a {
+    color: rgb(36, 79, 251);
+}
+
+.forgotpsd a:link {
+    text-decoration: none;
+}
+
+.register {
+    color: black;
+    text-align: center;
+}
+
+.register a {
+    color: rgb(36, 79, 251);
+}
+
+.register a:link {
+    text-decoration: none;
+}
+
+/* Login Successful Popup */
+
+.login-success-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 999;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none; 
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+
+/* Media queries for the responsiveness of the page */
+@media screen and (max-width: 600px) {
+    form {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+
+    .register {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 15rem;
+    }
+}
